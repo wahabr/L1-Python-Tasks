@@ -17,7 +17,7 @@ else:
         if name_switch in name_list:
             place = name_list.index(name_switch)
             name_list[place] = name
-            print("This is a list with {} instead of {}. {}".format(name, name_switch, name_list))
+            print("This is a list with {} instead of {}. {}".format(name, name_switch, sorted(name_list)))
         else:
             print("{} is not in the list".format(name_switch))
     elif answer == "no":
@@ -26,10 +26,11 @@ else:
         if answer_2 == "yes":
         #add name to list
             name_list.append(name)
-            print("This is the list with {} added {}.".format(name, name_list))
+            print("This is the list with {} added {}.".format(name, sorted(name_list)))
         else:
             print("Okay, goodbye")
-
+    else:
+        print("Could not understand. Goodbye")
 
 
 
