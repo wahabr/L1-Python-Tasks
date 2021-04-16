@@ -11,9 +11,9 @@ if name in name_list:
 else:
     print("{} is not in the list".format(name))
     #ask if want to replace name in list with their name
-    answer = input("Would you like to replace a name from the list with {}?".format(name)).strip().lower()
+    answer = input("Would you like to replace a name from the list with {}? ".format(name)).strip().lower()
     if answer == "yes":
-        name_switch = input("Which name would you like to replace with {}?".format(name)).strip().title()
+        name_switch = input("Which name would you like to replace with {}? ".format(name)).strip().title()
         if name_switch in name_list:
             place = name_list.index(name_switch)
             name_list[place] = name
@@ -22,7 +22,7 @@ else:
             print("{} is not in the list".format(name_switch))
     elif answer == "no":
         #ask if want to add name to list
-        answer_2 = input("Would you like to add {} to the list?".format(name)).strip().lower()
+        answer_2 = input("Would you like to add {} to the list? ".format(name)).strip().lower()
         if answer_2 == "yes":
         #add name to list
             name_list.append(name)
