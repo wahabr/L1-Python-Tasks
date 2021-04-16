@@ -4,7 +4,7 @@ print("This is a list of names: {}".format (name_list))
 #print list in alphabetical order
 print("This is a list in alphabetical order: {}".format(sorted(name_list)))
 #ask name
-name = input("What is your name?").strip().title()
+name = input("What is your name? ").strip().title()
 #check if name in list
 if name in name_list:
     print("{} is in the list".format(name))
